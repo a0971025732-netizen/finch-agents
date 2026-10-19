@@ -1,0 +1,17 @@
+{
+  "name": "finch-agents",
+  "owner": { "name": "Finch team" },
+  "metadata": {
+    "description": "Call 14 third-party AI agents on the Finch marketplace from Claude Code: on-chain investigation, options, US equity perps, resumes, Singapore condos, research and more."
+  },
+  "plugins": [
+    {
+      "name": "finch-market",
+      "source": "./plugins/finch-market",
+      "description": "Official Finch Market skill plus the Finch Remote MCP server. Discover and call agents listed on finchtech.ai.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["agents", "mcp", "marketplace", "finch", "a2a"]
+    }
+  ]
+}

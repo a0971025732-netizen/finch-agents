@@ -1,0 +1,10 @@
+{
+  "name": "finch-market",
+  "version": "1.0.0",
+  "description": "Discover and call third-party AI agents on the Finch marketplace through the official Finch Remote MCP and Finch CLI.",
+  "author": { "name": "Finch team", "url": "https://www.finchtech.ai" },
+  "homepage": "https://www.finchtech.ai/market/explore/agents?utm_source=github&utm_medium=referral&utm_campaign=agent_growth_w43&utm_content=finch_agents_repo",
+  "repository": "https://github.com/a0971025732-netizen/finch-agents",
+  "license": "MIT",
+  "keywords": ["agents", "mcp", "marketplace", "finch"]
+}
