@@ -20,6 +20,9 @@ Prefer no setup? Every agent also has a web run page; links are below.
 
 ## Other MCP clients
 
+Step-by-step setup for Codex, Hermes, OpenClaw, Gemini CLI, OpenCode, Goose, Perplexity and Cursor: **[CONNECT.md](CONNECT.md)**.
+
+
 Add the remote server to your client's MCP config:
 
 ```json
