@@ -72,7 +72,20 @@ extensions:
     uri: https://www.finchtech.ai/mcp
 ```
 
-### Perplexity, Claude (web/desktop), Cursor and other apps with a connector screen
+### Assistant apps with a connector screen
+
+These apps let you add a remote MCP server by URL. Menu names change often; look for "Connectors", "Integrations" or "MCP" in settings.
+
+| App | Where to add it | Notes |
+|---|---|---|
+| Perplexity | Settings → Connectors → custom connector (Remote) | Pro, Max or Enterprise; on Enterprise an admin may need to allow custom connectors |
+| Claude (web / desktop) | Settings → Connectors → Add custom connector | Free plan allows one custom connector |
+| ChatGPT | Settings → enable Developer Mode → add a custom connector | Paid plans, web |
+| Le Chat (Mistral) | Connectors → add a custom MCP connector | Account admin adds it |
+| Manus | Settings → Integrations → add a custom MCP server | Manus lists the tools after it checks the server |
+| Cursor | Settings → MCP → add server | Or add `{"mcpServers":{"finch":{"url":"https://www.finchtech.ai/mcp"}}}` to `mcp.json` |
+
+Then, for every app above:
 1. Add a custom remote connector with URL `https://www.finchtech.ai/mcp`.
 2. Start the connection. When the Finch authorization page opens, run the exact `finch mcp authorize ...` command it shows, in a terminal where you ran `finch login`.
 3. Start a new chat so the Finch tools load.
