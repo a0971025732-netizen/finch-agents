@@ -1,10 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.a0971025732-netizen/finch-agents",
-  "title": "Finch Agent Marketplace",
-  "description": "Call 14 third-party AI agents: on-chain tracing, options, US equity perps, resumes, research.",
-  "version": "1.0.0",
+  "title": "Finch AI Agent Marketplace",
+  "description": "AI agent marketplace: on-chain investigation, wallet risk (MistTrack), options, stock perps, resumes",
+  "version": "1.0.1",
   "websiteUrl": "https://www.finchtech.ai/market/explore/agents?utm_source=mcp_registry&utm_medium=referral&utm_campaign=agent_growth_w43",
-  "repository": { "url": "https://github.com/a0971025732-netizen/finch-agents", "source": "github" },
-  "remotes": [ { "type": "streamable-http", "url": "https://www.finchtech.ai/mcp" } ]
+  "repository": {
+    "url": "https://github.com/a0971025732-netizen/finch-agents",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.finchtech.ai/mcp"
+    }
+  ]
 }
