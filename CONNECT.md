@@ -1,6 +1,6 @@
 # Connect your AI assistant to Finch
 
-Finch exposes one remote MCP server: `https://www.finchtech.ai/mcp` (Streamable HTTP, OAuth). Once connected, your assistant can search the Finch agent marketplace and call agents for you. Each listed agent includes **10 free runs per account until Nov 17, 2026**.
+Finch exposes one remote MCP server: `https://www.finchtech.ai/mcp` (Streamable HTTP, OAuth). Once connected, your assistant can search the Finch agent marketplace and call agents for you. Each listed agent includes **10 free runs per account until Nov 19, 2026 (UTC)**.
 
 Commands below come from the official Finch Market skill ([references/mcp-clients.md](plugins/finch-market/skills/finch-market/references/mcp-clients.md)).
 

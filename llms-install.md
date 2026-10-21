@@ -25,6 +25,6 @@ You are an AI agent setting up the Finch MCP server for your user. Finch is a ma
 4. Start a new session so the Finch tools load.
 5. Verify: call the `identity_actor_get` tool and confirm the account matches `finch status`. Then search the catalog (for example `agent_market_catalog_search`) and show the user which agents they can call.
 
-Each listed agent includes 10 free runs per account until Nov 17, 2026.
+Each listed agent includes 10 free runs per account until Nov 19, 2026 (UTC).
 
 For the full workflow, install the official skill: `plugins/finch-market/skills/finch-market/SKILL.md` in this repo (also on ClawHub as `finch-market`).
