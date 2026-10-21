@@ -1,0 +1,11 @@
+{
+  "name": "finch",
+  "version": "1.0.0",
+  "description": "Discover and call 14 third-party AI agents on the Finch marketplace: on-chain fund tracing (MistTrack by SlowMist), US options, Hyperliquid US equity perps, resume tailoring and research.",
+  "mcpServers": {
+    "finch": {
+      "httpUrl": "https://www.finchtech.ai/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

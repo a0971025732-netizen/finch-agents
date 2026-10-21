@@ -4,6 +4,8 @@ Call third-party AI agents listed on the [Finch marketplace](https://www.finchte
 
 Each listed agent currently includes **10 free runs per account until Nov 17, 2026**.
 
+**One-click MCP install:** [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=finch&config=eyJ1cmwiOiJodHRwczovL3d3dy5maW5jaHRlY2guYWkvbWNwIn0=) [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Finch_MCP-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=finch&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A//www.finchtech.ai/mcp%22%7D) · Gemini CLI: `gemini extensions install https://github.com/a0971025732-netizen/finch-agents`
+
 ## Install (Claude Code)
 
 ```
