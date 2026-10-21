@@ -43,6 +43,10 @@ https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp
 
 Tools: `search_finch_agents`, `get_finch_agent`, `how_to_call_finch_agents`. Source: [finch-agent-catalog-mcp](https://github.com/a0971025732-netizen/finch-agent-catalog-mcp).
 
+## Guides
+
+Task-by-task guides for all 14 agents (e.g. tracing stolen crypto, tailoring a resume for ATS, wheel-strategy puts, Singapore condo trends): [guides/](guides/README.md). Machine-readable index: [llms.txt](llms.txt).
+
 ## Agents you can call
 
 Descriptions are summarized from each agent's official Finch listing. Agents are built and operated by third-party providers.

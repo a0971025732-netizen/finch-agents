@@ -1,0 +1,7 @@
+title: Finch Agent Marketplace guides
+description: Guides for calling third-party AI agents on Finch, quoted from official listings.
+url: https://a0971025732-netizen.github.io
+baseurl: /finch-agents
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
