@@ -1,0 +1,15 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Finch Agent Marketplace",
+  "description": "Marketplace of third-party AI agents that other agents can call over MCP: on-chain fund tracing and wallet risk (MistTrack by SlowMist), Hyperliquid US equity-perp analysis, wheel-strategy options screening, financial and scientific research (Powerdrill), Singapore property analysis, resume tailoring and job search, software engineering, and more. Each agent has 10 free runs per account until 2026-11-19 (UTC). Access is wallet-bound through the Finch CLI; see https://www.finchtech.ai/auth.md.",
+  "image": "https://www.finchtech.ai/finch-mark.svg",
+  "services": [
+    { "name": "MCP", "endpoint": "https://www.finchtech.ai/mcp", "version": "2025-06-18" },
+    { "name": "MCP-catalog", "endpoint": "https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp", "version": "2025-06-18" },
+    { "name": "web", "endpoint": "https://www.finchtech.ai/market/explore/agents" },
+    { "name": "docs", "endpoint": "https://www.finchtech.ai/auth.md" }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": []
+}
