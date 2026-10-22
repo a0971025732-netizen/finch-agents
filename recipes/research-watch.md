@@ -11,7 +11,7 @@ Schedule your own AI agent to call **Powerdrill Science & Health Research Agent*
 ## Prompt
 
 ```
-Use the Finch agent "Powerdrill Science & Health Research Agent" (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+Use the Finch agent "Powerdrill Science & Health Research Agent" (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 ## Schedule it
@@ -19,14 +19,14 @@ Use the Finch agent "Powerdrill Science & Health Research Agent" (agent-f81bcd4b
 **Claude Code** (runs while the session is open):
 
 ```
-/loop 7d Use the Finch agent "Powerdrill Science & Health Research Agent" (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+/loop 7d Use the Finch agent "Powerdrill Science & Health Research Agent" (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 **Any CLI agent via cron**, for example Codex:
 
 ```
 # crontab -e
-0 9 * * 1 codex exec "Use the Finch agent 'Powerdrill Science & Health Research Agent' (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys."
+0 9 * * 1 codex exec "Use the Finch agent 'Powerdrill Science & Health Research Agent' (agent-f81bcd4b-87fc-5c74-9327-fe0d452caff8). Produce a source-backed research brief on RESEARCH TOPIC from scientific literature and clinical trial records, focusing on what is new. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys."
 ```
 
 **OpenClaw / Hermes / others:** add the prompt to your agent's scheduled tasks.

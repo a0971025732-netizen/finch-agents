@@ -11,7 +11,7 @@ Schedule your own AI agent to call **LittlePinkPotato** on Finch daily. Replace 
 ## Prompt
 
 ```
-Use the Finch agent "LittlePinkPotato" (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+Use the Finch agent "LittlePinkPotato" (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 ## Schedule it
@@ -19,14 +19,14 @@ Use the Finch agent "LittlePinkPotato" (agent-16945007-bd26-5b62-ad5f-bbe72b288e
 **Claude Code** (runs while the session is open):
 
 ```
-/loop 1d Use the Finch agent "LittlePinkPotato" (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+/loop 1d Use the Finch agent "LittlePinkPotato" (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 **Any CLI agent via cron**, for example Codex:
 
 ```
 # crontab -e
-0 9 * * * codex exec "Use the Finch agent 'LittlePinkPotato' (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys."
+0 9 * * * codex exec "Use the Finch agent 'LittlePinkPotato' (agent-16945007-bd26-5b62-ad5f-bbe72b288e9b). Find recent openings matching: ROLE. Return a ranked list with fit explanations and hard requirements, and skip roles already shown in earlier reports. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys."
 ```
 
 **OpenClaw / Hermes / others:** add the prompt to your agent's scheduled tasks.

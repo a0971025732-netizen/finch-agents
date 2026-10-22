@@ -11,7 +11,7 @@ Schedule your own AI agent to call **Wheel-strategy Option Desk (Morgan Dashan)*
 ## Prompt
 
 ```
-Use the Finch agent "Wheel-strategy Option Desk (Morgan Dashan)" (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+Use the Finch agent "Wheel-strategy Option Desk (Morgan Dashan)" (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 ## Schedule it
@@ -19,14 +19,14 @@ Use the Finch agent "Wheel-strategy Option Desk (Morgan Dashan)" (agent-f7c9c94a
 **Claude Code** (runs while the session is open):
 
 ```
-/loop 7d Use the Finch agent "Wheel-strategy Option Desk (Morgan Dashan)" (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+/loop 7d Use the Finch agent "Wheel-strategy Option Desk (Morgan Dashan)" (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 **Any CLI agent via cron**, for example Codex:
 
 ```
 # crontab -e
-0 9 * * 1 codex exec "Use the Finch agent 'Wheel-strategy Option Desk (Morgan Dashan)' (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys."
+0 9 * * 1 codex exec "Use the Finch agent 'Wheel-strategy Option Desk (Morgan Dashan)' (agent-f7c9c94a-961b-4159-a6ba-6b7852e84264). For TICKER with the cash I set aside for cash-secured puts (or my shares and cost basis for covered calls), screen options expiring in 3 to 9 days and give an OPEN or SKIP decision with the main event risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys."
 ```
 
 **OpenClaw / Hermes / others:** add the prompt to your agent's scheduled tasks.

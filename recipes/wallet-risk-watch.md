@@ -11,7 +11,7 @@ Schedule your own AI agent to call **MistTrack (by SlowMist)** on Finch daily. R
 ## Prompt
 
 ```
-Use the Finch agent "MistTrack (by SlowMist)" (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+Use the Finch agent "MistTrack (by SlowMist)" (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 ## Schedule it
@@ -19,14 +19,14 @@ Use the Finch agent "MistTrack (by SlowMist)" (agent-3dcaa57f-b8b8-5c78-9300-c97
 **Claude Code** (runs while the session is open):
 
 ```
-/loop 1d Use the Finch agent "MistTrack (by SlowMist)" (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+/loop 1d Use the Finch agent "MistTrack (by SlowMist)" (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 **Any CLI agent via cron**, for example Codex:
 
 ```
 # crontab -e
-0 9 * * * codex exec "Use the Finch agent 'MistTrack (by SlowMist)' (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys."
+0 9 * * * codex exec "Use the Finch agent 'MistTrack (by SlowMist)' (agent-3dcaa57f-b8b8-5c78-9300-c972e5a764bc). Trace recent fund flows for WALLET_ADDRESS, analyze its transaction relationships, and flag any potential risks. Summarize only what changed since the last report. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys."
 ```
 
 **OpenClaw / Hermes / others:** add the prompt to your agent's scheduled tasks.

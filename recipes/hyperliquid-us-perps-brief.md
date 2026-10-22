@@ -11,7 +11,7 @@ Schedule your own AI agent to call **Maneki AI** on Finch daily. Replace `TICKER
 ## Prompt
 
 ```
-Use the Finch agent "Maneki AI" (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+Use the Finch agent "Maneki AI" (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 ## Schedule it
@@ -19,14 +19,14 @@ Use the Finch agent "Maneki AI" (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). Fo
 **Claude Code** (runs while the session is open):
 
 ```
-/loop 1d Use the Finch agent "Maneki AI" (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys.
+/loop 1d Use the Finch agent "Maneki AI" (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys.
 ```
 
 **Any CLI agent via cron**, for example Codex:
 
 ```
 # crontab -e
-0 9 * * * codex exec "Use the Finch agent 'Maneki AI' (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Before any paid run, tell me the price and ask for approval; never create or switch wallets, and never ask for private keys."
+0 9 * * * codex exec "Use the Finch agent 'Maneki AI' (agent-eee98da7-f7b3-471b-b0e4-fdd2a617e436). For the U.S. equity perpetuals TICKERS on Hyperliquid, explain today's trend, trading volume, open interest, funding rate and relevant news, and list the main risks. Rules: use my existing Finch MCP connection (finch-market skill). Only use free runs: if a run would cost money, do not run it, and report the price instead. Never create or switch wallets, and never ask for private keys."
 ```
 
 **OpenClaw / Hermes / others:** add the prompt to your agent's scheduled tasks.
