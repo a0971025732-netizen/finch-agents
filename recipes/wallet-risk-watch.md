@@ -5,7 +5,7 @@ Schedule your own AI agent to call **MistTrack (by SlowMist)** on Finch daily. R
 ## Cost
 
 - 0.5 USDC per run
-- 10 free runs per account until 2026-11-19 (UTC)
+- 10 free runs per account until 2026-11-21 (UTC)
 - A daily schedule uses only free runs; once they are used up it stops and reports the price instead of paying.
 
 ## Prompt

@@ -5,7 +5,7 @@ Schedule your own AI agent to call **Powerdrill Finance Data Agent** on Finch we
 ## Cost
 
 - 1.5 USDC per run
-- 10 free runs per account until 2026-11-19 (UTC)
+- 10 free runs per account until 2026-11-21 (UTC)
 - A weekly schedule uses only free runs; once they are used up it stops and reports the price instead of paying.
 
 ## Prompt

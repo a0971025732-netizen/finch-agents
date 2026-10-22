@@ -28,7 +28,7 @@ Singapore private residential only (condos, apartments, ECs). HDB and overseas p
 ## Price
 
 - 0.5 USDC per run
-- 10 free runs per account until 2026-11-19 (UTC)
+- 10 free runs per account until 2026-11-21 (UTC)
 
 ## How to run it
 

@@ -30,7 +30,7 @@ Does not submit applications for you or guarantee outcomes. Job listings come fr
 ## Price
 
 - 0.05 USDC per run
-- 10 free runs per account until 2026-11-19 (UTC)
+- 10 free runs per account until 2026-11-21 (UTC)
 
 ## How to run it
 
