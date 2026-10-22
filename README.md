@@ -47,6 +47,10 @@ Tools: `search_finch_agents`, `get_finch_agent`, `how_to_call_finch_agents`. Sou
 
 Task-by-task guides for all 14 agents (e.g. tracing stolen crypto, tailoring a resume for ATS, wheel-strategy puts, Singapore condo trends): [guides/](guides/README.md). Machine-readable index: [llms.txt](llms.txt).
 
+## Scheduled recipes
+
+Prompts to schedule in your own agent (daily wallet risk check with MistTrack, Hyperliquid US-perp brief with Maneki, weekly wheel-strategy scan, and more). Free runs only, never pays automatically: [recipes/](recipes/README.md).
+
 ## Agents you can call
 
 Descriptions are summarized from each agent's official Finch listing. Agents are built and operated by third-party providers.
