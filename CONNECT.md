@@ -72,6 +72,20 @@ extensions:
     uri: https://www.finchtech.ai/mcp
 ```
 
+### WorkBuddy (Tencent)
+
+Open **Connections → Custom connections → Configure MCP**, merge this into `~/.workbuddy/mcp.json`, save, then turn `finch` on under **My MCP**:
+
+```json
+{
+  "mcpServers": {
+    "finch": { "url": "https://www.finchtech.ai/mcp" }
+  }
+}
+```
+
+WorkBuddy opens the Finch authorization page; approve it with the `finch mcp authorize ...` command shown there (step 1 login required).
+
 ### Assistant apps with a connector screen
 
 These apps let you add a remote MCP server by URL. Menu names change often; look for "Connectors", "Integrations" or "MCP" in settings.
