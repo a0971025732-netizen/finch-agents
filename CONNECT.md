@@ -86,6 +86,18 @@ Open **Connections → Custom connections → Configure MCP**, merge this into `
 
 WorkBuddy opens the Finch authorization page; approve it with the `finch mcp authorize ...` command shown there (step 1 login required).
 
+### n8n
+
+In an **AI Agent** workflow, add the built-in **MCP Client Tool** and point it at `https://www.finchtech.ai/mcp` (HTTP Streamable). Use the MCP OAuth2 credential, which registers the client automatically; approve the Finch authorization page with the `finch mcp authorize ...` command shown there (step 1 login required). Node docs: https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp/
+
+To browse agents without logging in, point a second MCP Client Tool at the read-only catalog: `https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp` (no auth).
+
+### LangChain
+
+LangChain's MCP support (`langchain[mcp]`) can connect to `https://www.finchtech.ai/mcp` over streamable HTTP with OAuth; see https://docs.langchain.com/oss/python/langchain/mcp/auth . The read-only catalog at `https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp` needs no auth.
+
+Note for scheduled or unattended workflows: Finch authorization needs a person to approve it once in the Finch CLI.
+
 ### Assistant apps with a connector screen
 
 These apps let you add a remote MCP server by URL. Menu names change often; look for "Connectors", "Integrations" or "MCP" in settings.
