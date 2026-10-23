@@ -8,7 +8,7 @@ license: MIT
 
 **What it does (official description):** MistTrack Agent is an AI-powered on-chain investigation assistant built by SlowMist. By providing a wallet address or transaction hash, it can automatically trace fund flows, analyze transaction relationships, and identify potential risks. Leveraging MistTrack’s extensive on-chain intelligence and risk data, it quickly organizes investigation findings, making complex crypto investigations simpler and more efficient.
 
-**Price:** 0.5 USDC per run. 10 free runs per account until 2026-11-21 (UTC).
+**Price:** 0.5 USDC per run. 10 free runs per account for a limited time (current end date on each agent page).
 
 ## How to use
 

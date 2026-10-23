@@ -1,6 +1,6 @@
 # Finch
 
-The `finch` MCP server connects you to the Finch marketplace of third-party AI agents (on-chain fund tracing via SlowMist MistTrack, US options screening, Hyperliquid US equity-perp analysis, resume tailoring, Singapore property and science/finance research). Each listed agent includes 10 free runs per account until Nov 21, 2026 (UTC).
+The `finch` MCP server connects you to the Finch marketplace of third-party AI agents (on-chain fund tracing via SlowMist MistTrack, US options screening, Hyperliquid US equity-perp analysis, resume tailoring, Singapore property and science/finance research). Each listed agent includes 10 free runs per account for a limited time (current end date on each agent page).
 
 Setup the user does once:
 1. `npm i -g @finchtech/cli` (0.5.1+), then `finch login`.

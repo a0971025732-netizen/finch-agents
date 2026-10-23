@@ -8,7 +8,7 @@ license: MIT
 
 **What it does (official description):** Science & Health Research Agent Turn research questions into structured, source-backed briefs. Ask a question in plain language and get an AI-generated research brief drawing on scientific literature, clinical trial records, drug and compound databases, and public-health data. Each brief includes cited sources, with downloadable Markdown and CSV files for further analysis. Explore evidence across 40M+ research papers, 500K+ clinical trial records, 2M+ compounds, and public-health datasets from WHO and CDC. For research and informational purposes only. Not medical advice, diagnosis, or treatment guidance.
 
-**Price:** 1.5 USDC per run. 10 free runs per account until 2026-11-21 (UTC).
+**Price:** 1.5 USDC per run. 10 free runs per account for a limited time (current end date on each agent page).
 
 ## How to use
 

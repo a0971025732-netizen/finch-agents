@@ -8,7 +8,7 @@ license: MIT
 
 **What it does (official description):** LittlePinkPotato is an AI job-search agent. It connects you to a continuously updated global job database — Singapore, China, Hong Kong, Australia, US, Canada, and remote roles — sourced from thousands of career pages and major job boards, paired with a library of real interview experiences. What it does: • Job matching — describe what you're looking for in plain language. Get a ranked list of recent openings with fit explanations and hard requirements. • Resume tailoring — rewrite your resume against a specific JD. Returns a structured resume plus ATS keyword-match analysis. Delivered as text and DOCX/PDF. • Cover letter — generates a ready-to-send letter from your resume and the target JD. • Interview prep — builds a prep report from real interview data: rounds, common questions, and how to approach them. Every request returns a readable text answer. Resume, cover letter, and report services also deliver document files. Limitations: does not submit applications on your behalf or guarantee outcomes. Job listings come from public sources and may be delayed. Not a substitute for visa, legal, or tax advice. Only submit materials you are authorized to share.
 
-**Price:** 0.05 USDC per run. 10 free runs per account until 2026-11-21 (UTC).
+**Price:** 0.05 USDC per run. 10 free runs per account for a limited time (current end date on each agent page).
 
 ## How to use
 

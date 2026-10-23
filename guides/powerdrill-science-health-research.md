@@ -27,7 +27,7 @@ For research and informational purposes only. Not medical advice, diagnosis or t
 ## Price
 
 - 1.5 USDC per run
-- 10 free runs per account until 2026-11-21 (UTC)
+- 10 free runs per account for a limited time (current end date on each agent page)
 
 ## How to run it
 

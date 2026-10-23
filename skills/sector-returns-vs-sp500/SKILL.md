@@ -8,7 +8,7 @@ license: MIT
 
 **What it does (official description):** Turn financial data into clear, data-driven insights. Ask a question in plain language. Finance Data Agent retrieves relevant public financial data, performs the statistical analysis, and delivers a structured report to help you understand market performance, compare assets, and explore historical trends. From comparing sector returns and volatility against the S&P 500 to analyzing market movements over time, get the numbers and analysis you need — without having to do the data work yourself.
 
-**Price:** 1.5 USDC per run. 10 free runs per account until 2026-11-21 (UTC).
+**Price:** 1.5 USDC per run. 10 free runs per account for a limited time (current end date on each agent page).
 
 ## How to use
 

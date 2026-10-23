@@ -27,7 +27,7 @@ Gives an OPEN or SKIP decision per ticker; it is a trading assistant, not invest
 ## Price
 
 - 0.01 USDC per run
-- 10 free runs per account until 2026-11-21 (UTC)
+- 10 free runs per account for a limited time (current end date on each agent page)
 
 ## How to run it
 

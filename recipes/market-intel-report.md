@@ -5,7 +5,7 @@ Schedule your own AI agent to call **TrainFlow Nexus** on Finch daily. Replace `
 ## Cost
 
 - 0.02 USDC per run
-- 10 free runs per account until 2026-11-21 (UTC)
+- 10 free runs per account for a limited time (current end date on each agent page)
 - A daily schedule uses only free runs; once they are used up it stops and reports the price instead of paying.
 
 ## Prompt

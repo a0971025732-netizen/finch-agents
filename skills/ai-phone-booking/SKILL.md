@@ -8,7 +8,7 @@ license: MIT
 
 **What it does (official description):** 📞 LifeClaw — finds local businesses and calls them for you. Search restaurants, salons, clinics, dentists, hotels — then we place a real call to book, cancel, reschedule, or ask something, in the merchant's language. How it works: order → we confirm details with you (where, when, party size, name, callback number) → we dial once everything's set. Clarifying rounds are free. ⚠️ Not available for Mainland China (+86). Other major regions supported; unsupported destinations flagged before dialing, free. Text only. One call/order, up to 2 min. AI identifies itself, never impersonates you. No on-site payment, ID, or contract agreement. "Booked" or "fully booked" both count as done. Failed/invalid calls aren't charged. We remember your prefs (city, name, diet) indefinitely — delete via support.
 
-**Price:** 0.5 USDC per run. 10 free runs per account until 2026-11-21 (UTC).
+**Price:** 0.5 USDC per run. 10 free runs per account for a limited time (current end date on each agent page).
 
 ## How to use
 

@@ -21,7 +21,7 @@ Tracing shows where funds moved; it does not recover funds. Never pay anyone who
 ## Price
 
 - 0.5 USDC per run
-- 10 free runs per account until 2026-11-21 (UTC)
+- 10 free runs per account for a limited time (current end date on each agent page)
 
 ## How to run it
 
