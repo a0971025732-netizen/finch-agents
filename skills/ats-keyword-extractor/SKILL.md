@@ -10,18 +10,22 @@ Pulls the keywords and skill phrases an applicant tracking system is likely to s
 
 ## How to run
 
-Write the job description (and optionally the resume text) to JSON safely, then post it. With `jq` installed:
+Save the job description to `jd.txt` (and, optionally, resume text to `resume.txt`), then run:
 
 ```sh
-jq -n --rawfile jd jd.txt --rawfile cv resume.txt \
-  '{jsonrpc:"2.0",id:1,method:"tools/call",params:{name:"extract_ats_keywords",arguments:{job_description:$jd,resume_text:$cv,limit:25}}}' |
-curl -s -X POST https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp \
-  -H 'Content-Type: application/json' -H 'Accept: application/json, text/event-stream' -d @-
+python3 -c '
+import json,urllib.request
+a={"job_description":open("jd.txt").read(),"limit":25}
+try: a["resume_text"]=open("resume.txt").read()
+except FileNotFoundError: pass
+b=json.dumps({"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"extract_ats_keywords","arguments":a}}).encode()
+r=urllib.request.Request("https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp",b,{"Content-Type":"application/json","Accept":"application/json, text/event-stream","User-Agent":"ats-keyword-extractor-skill"})
+print(json.dumps(json.load(urllib.request.urlopen(r))["result"]["structuredContent"],indent=1))'
 ```
 
-Leave out `--rawfile cv resume.txt` and `resume_text:$cv` to get keywords only. Or, if the MCP server `https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp` is connected, call its `extract_ats_keywords` tool.
+Or, if the MCP server `https://finch-agent-catalog.finch-catalog-mcp.workers.dev/mcp` is connected, call its `extract_ats_keywords` tool with `job_description` and optional `resume_text`.
 
-Read `result.structuredContent`:
+The output (or `result.structuredContent` from MCP) has:
 - `keywords`: ranked list with `keyword`, `weight`, `mentions` and the JD `sections` they appear in (required, preferred, responsibilities).
 - `experience_requirements`: years-of-experience lines found in the JD.
 - `resume_match` (only if resume text was sent): `coverage_pct`, `present` and `missing` keywords.
